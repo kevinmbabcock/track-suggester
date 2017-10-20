@@ -1,13 +1,9 @@
-#tracks p, #tracks h5 {
+#tracks p, #tracks h5, #web, #mobile, #game, #desktop, .submit {
   display: none;
 }
 
 #tracks h5 {
   margin-top: 50px;
-}
-
-#web, #mobile, #game, #desktop, .submit {
-  display: none;
 }
 
 .clickable:hover {
@@ -21,4 +17,22 @@
 
 .recommend {
   display: none;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.firstName {
+  color: red;
+}
+
+.space {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

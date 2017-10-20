@@ -31,7 +31,7 @@
           <p>Why do you want to learn to program?</p>
           <div class="radio">
             <label>
-              <input type="radio" name="why" value="professional">
+              <input type="radio" name="why" value="professional" checked>
               Be a professional developer
             </label>
           </div>
@@ -58,38 +58,33 @@
           <p>What kind of programming do you want to learn?</p>
           <div class="radio">
             <label>
-              <input type="radio" class="what" value="game">
+              <input type="radio" name="kind" value="game" checked>
               Game
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" class="what" value="web">
+              <input type="radio" name="kind" value="web">
               Web
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" class="what" value="mobile">
+              <input type="radio" name="kind" value="mobile">
               Mobile
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" class="what" value="desktop">
+              <input type="radio" class="kind" value="desktop">
               Desktop Software
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" class="what" value="ai">
-              Artificial Intelligence
             </label>
           </div>
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
-      <form id="info">
+      <form id="info" class="space">
+        <p class="submit">Please also select one of the following:</p>
         <select class="form-control" id="web">
           <option>Select One:</option>
           <option value="design">Design: how things look</option>
@@ -155,6 +150,7 @@
             </p>
           </div>
         </ul>
+        <h5>Thank you for filling out our survey <span class=firstName></span>. We hope to see you in one of our classes soon!</h5>
       </div>
     </div>
   </body>
