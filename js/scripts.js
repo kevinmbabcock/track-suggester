@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
   $("#intro .clickable").click(function() {
@@ -26,7 +24,7 @@ $(document).ready(function() {
     var why = $("input:radio[name=why]:checked").val();
     var kind = $("input:radio[name=kind]:checked").val();
 
-    if (!firstName || !lastName || !dob || !why || !kind) {
+    if (!firstName || !lastName || !why || !kind) {
       alert("Please fill out all requested information");
     } else if (kind === "game") {
       $("#game").show();
@@ -49,32 +47,35 @@ $(document).ready(function() {
       var game = $("#game").val();
       var desktop = $("#desktop").val();
 
-      if (web || mobile || game || desktop) {
-        $("#intro").show();
+      if (!web && !mobile && !game && !desktop) {
+        alert("Please select an option");
+      } else {
+        $("#intro .content").show();
         $("#tracks h5").show();
         $(".firstName").text(firstName);
+        $("#tracks h4").hide();
       }
 
       if (web === "ux" || web === "design") {
-        $("#java").show();
+        $("#java .recommend").show();
       } else if (web === "logic") {
-        $("#ruby").show();
+        $("#ruby .recommend").show();
       } else if (mobile === "android") {
-        $("#java").show();
+        $("#java .recommend").show();
       } else if (mobile === "windows") {
-        $("#cSharp").show();
+        $("#cSharp .recommend").show();
       } else if (mobile === "ios") {
-        $("#php").show();
+        $("#php .recommend").show();
       } else if (game === "vr" || game === "mobile" || game === "pc") {
-        $("#cSharp").show();
+        $("#cSharp .recommend").show();
       } else if (game === "web") {
-        $("#php").show();
+        $("#php .recommend").show();
       } else if (desktop === "windows") {
-        $("#cSharp").show();
+        $("#cSharp .recommend").show();
       } else if (desktop === "mac") {
-        $("#php").show();
+        $("#php .recommend").show();
       } else if (desktop === "cross") {
-        $("#java").show();
+        $("#java .recommend").show();
       }
 
     })

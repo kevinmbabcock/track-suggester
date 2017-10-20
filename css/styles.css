@@ -1,9 +1,23 @@
+body {
+  background-color: #f1c68e;
+}
+
+.jumbotron {
+  background-color: #4d79ff;
+}
+
+.jumbotron img {
+  float: left;
+  margin-left: 50px;
+}
+
 #tracks p, #tracks h5, #web, #mobile, #game, #desktop, .submit {
   display: none;
 }
 
 #tracks h5 {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .clickable:hover {
@@ -35,4 +49,11 @@ h3 {
 .space {
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 400px;
+}
+
+.floatLeft {
+  float: left;
+  margin-left: 30px;
+  margin-right: 100px;
 }
