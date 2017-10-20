@@ -1,6 +1,23 @@
 
 
 $(document).ready(function() {
+
+  $("#intro .clickable").click(function() {
+    $("#intro .content").show();
+  })
+  $("#cSharp .clickable").click(function() {
+    $("#cSharp .content").show();
+  })
+  $("#java .clickable").click(function() {
+    $("#java .content").show();
+  })
+  $("#php .clickable").click(function() {
+    $("#php .content").show();
+  })
+  $("#ruby .clickable").click(function() {
+    $("#ruby .content").show();
+  })
+
   $("#basic").submit(function(event) {
     event.preventDefault();
     var firstName = $("#firstName").val();
@@ -8,6 +25,10 @@ $(document).ready(function() {
     var dob = $("#born").val();
     var why = $("input:radio[name=why]:checked").val();
     var what = $("input:radio[name=what]:checked").val();
+
+    $("#intro").show();
+    $("#tracks h5").show();
+    $(".firstName").text(firstName);
 
     if (!firstName || !lastName || !dob || !why || !what) {
       // alert("Please fill out all requested information");

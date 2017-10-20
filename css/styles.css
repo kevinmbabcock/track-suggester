@@ -1,23 +1,24 @@
-#tracks div {
+#tracks p, #tracks h5 {
   display: none;
 }
 
-/*.floatLeft {
-  float: left;
+#tracks h5 {
+  margin-top: 50px;
 }
-
-.floatRight {
-  float: right;
-}*/
 
 #web, #mobile, #game, #desktop, .submit {
   display: none;
 }
 
-/*#info {
-  float: right;
-}*/
+.clickable:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-#tracks {
-  /*float: left;*/
+.clickable {
+  color: blue;
+}
+
+.recommend {
+  display: none;
 }
