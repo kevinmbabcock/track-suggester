@@ -10,7 +10,7 @@
   float: right;
 }*/
 
-#web, #mobile, #game {
+#web, #mobile, #game, #desktop, .submit {
   display: none;
 }
 
@@ -19,6 +19,5 @@
 }*/
 
 #tracks {
-  display: none;
   /*float: left;*/
 }
