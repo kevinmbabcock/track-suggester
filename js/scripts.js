@@ -23,6 +23,11 @@ $(document).ready(function() {
     var dob = $("#born").val();
     var why = $("input:radio[name=why]:checked").val();
     var kind = $("input:radio[name=kind]:checked").val();
+    // $("#game #web #mobile #desktop").hide();
+    $("#game").hide();
+    $("#web").hide();
+    $("#mobile").hide();
+    $("#desktop").hide();
 
     if (!firstName || !lastName || !why || !kind) {
       alert("Please fill out all requested information");
@@ -46,12 +51,14 @@ $(document).ready(function() {
       var mobile = $("#mobile").val();
       var game = $("#game").val();
       var desktop = $("#desktop").val();
+      $("#tracks .recommend").hide();
 
       if (!web && !mobile && !game && !desktop) {
         alert("Please select an option");
       } else {
         // $("#intro .content").show();
         $("#tracks h5").show();
+        $("#tracks #result").show();
         $(".firstName").text(firstName);
         $("#tracks h4").hide();
       }
