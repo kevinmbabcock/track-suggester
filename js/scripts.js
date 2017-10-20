@@ -50,32 +50,43 @@ $(document).ready(function() {
       if (!web && !mobile && !game && !desktop) {
         alert("Please select an option");
       } else {
-        $("#intro .content").show();
+        // $("#intro .content").show();
         $("#tracks h5").show();
         $(".firstName").text(firstName);
         $("#tracks h4").hide();
       }
 
+
       if (web === "ux" || web === "design") {
         $("#java .recommend").show();
+        $(".result").text("Java");
       } else if (web === "logic") {
         $("#ruby .recommend").show();
+        $(".result").text("Ruby");
       } else if (mobile === "android") {
         $("#java .recommend").show();
+        $(".result").text("Java");
       } else if (mobile === "windows") {
         $("#cSharp .recommend").show();
+        $(".result").text("C Sharp");
       } else if (mobile === "ios") {
         $("#php .recommend").show();
+        $(".result").text("PHP");
       } else if (game === "vr" || game === "mobile" || game === "pc") {
         $("#cSharp .recommend").show();
+        $(".result").text("C Sharp");
       } else if (game === "web") {
         $("#php .recommend").show();
+        $(".result").text("PHP");
       } else if (desktop === "windows") {
         $("#cSharp .recommend").show();
+        $(".result").text("C Sharp");
       } else if (desktop === "mac") {
         $("#php .recommend").show();
+        $(".result").text("PHP");
       } else if (desktop === "cross") {
         $("#java .recommend").show();
+        $(".result").text("Java");
       }
 
     })
